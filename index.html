@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter</title>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Currency Converter App in JavaScript | CodingNepal</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img src="money.png" class="money-img">
-    <h1>Currency Converter</h1>
-    <p>Choose the currency and the amount to get the exchange rate</p>
-    <div class="container">
-        <div class="currency">
-            <select id="currency-one">
-                <option value="USD" selected>United States Dollars</option>
-                <option value="EUR">Euro</option>
-                <option value="GBP">United Kingdom Pounds</option>
-                <option value="AUD">Australia Dollars</option>
-                <option value="ATS">Australia Schillings</option>
-                <option value="CAD">Canada Dollars</option>
-                <option value="HKD">Hong Kong Dollars</option>
-                <option value="HUF">Hungary Forint</option>
-                <option value="ISK">Iceland Krona</option>
-                <option value="INR">Indian Rupees</option>
-                <option value="IDR">Indonesia Rupaiah</option>
-                <option value="IEP">Ireland Punt</option>
-                <option value="ILS">Israel new shekels</option>
-                <option value="KRW">Korea(south)Won</option>
-                <option value="NZD">New Zealand Dollars</option>
-                <option value="NOK">Norway Kroner</option>
-                <option value="SGD">Singapore Dollars</option>
-                <option value="ZAR">South Africa Rand</option>
-               
-
-            </select>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action="#">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1">
         </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/np.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">Getting exchange rate...</div>
+        <button>Get Exchange Rate</button>
+      </form>
     </div>
 
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
 
-
-
-<script src="script.js"></script>
-</body>
+  </body>
 </html>
