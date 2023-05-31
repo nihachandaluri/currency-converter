@@ -1,10 +1,9 @@
-/* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
   display: flex;
@@ -12,11 +11,15 @@ body{
   justify-content: center;
   min-height: 100vh;
   padding: 0 10px;
-  background: #675AFE;
+  background: #808000;
 }
 ::selection{
   color: #fff;
-  background: #675AFE;
+  background: #9acd32;
+}
+.money-img{
+  width: 150px;
+  margin-left: 75px;
 }
 .wrapper{
   width: 370px;
@@ -51,7 +54,7 @@ form input{
 }
 form input:focus{
   padding: 0 14px;
-  border: 2px solid #675AFE;
+  border: 2px solid #006400;
 }
 form .drop-list{
   display: flex;
@@ -102,9 +105,9 @@ form button{
   color: #fff;
   font-size: 17px;
   cursor: pointer;
-  background: #675AFE;
+  background: #9acd32;
   transition: 0.3s ease;
 }
 form button:hover{
-  background: #4534fe;
+  background: #006400;
 }
